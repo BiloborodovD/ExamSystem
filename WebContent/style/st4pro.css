@@ -1,0 +1,213 @@
+
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: auto;
+			height: 100%;
+			max-height: 100%;
+			font-family: Arial, Helvetica, sans-serif;
+			line-height: 1.5em;
+		}
+
+		main {
+			position: fixed;
+			top: 140px; /* Set this to the height of the header */
+			bottom: 50px; /* Set this to the height of the footer */
+			left: 200px;
+			right: 200px;
+			overflow: auto;
+			background: #DEF3FD;
+		}
+
+		#header {
+
+			position: absolute;
+			background:#fff;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 150px;
+			overflow: hidden; /* Disables scrollbars on the header frame. To enable scrollbars, change "hidden" to "scroll" */
+		<!--	background: #BCCE98; -->
+		}
+
+		#header h1 {
+			float: center;
+			font: 200% Georgia;
+			color: #333;
+			padding: 10px 20px 5px 10px;
+			margin: 0;
+	}
+
+	#header #logo{
+		padding-left: 30px;
+		padding-right:  10px;
+		padding-top: 20px;
+		padding-bottom: 0;
+		height: 70px;
+	}
+
+	#header #options {
+		clear: both;
+		background: #4F9EC9;
+		height: 30px;
+		padding: 10px;
+	}
+
+	#header #options a:hover {
+		background:  #77dd77;
+	}
+
+	#header #options a.active {
+		background:  #77dd77;
+	}
+
+	#header #options p {
+		color: #fff;
+		font: 140% Trebuchet MS;
+		display: inline;
+		list-style: none;
+		margin: 0 1px 0 0;
+	}
+	#header #options a {
+	color: #fff;
+	font: 140% Trebuchet MS;
+	text-decoration: none;
+	padding-top: 5px;
+	padding-right:15px;
+	padding-bottom:5px;
+	padding-left:15px;
+	float: right;
+}
+
+		#footer {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 50px;
+			text-align: center;
+			overflow: hidden; /* Disables scrollbars on the footer frame. To enable scrollbars, change "hidden" to "scroll" */
+			background: #4F9EC9;
+		}
+
+		#left {
+			position: absolute;
+			background-color: #bad7df;
+			top: 140px; /* Set this to the height of the header */
+			bottom: 50px; /* Set this to the height of the footer */
+			left: 0;
+			width: 200px;
+			overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
+		<!--	background: #DAE9BC; -->
+		}
+
+		#left h2 {
+			font: 140% Arial;
+			padding-left: 55px;
+			color: #333;
+			margin: 10px 0 10px 0;
+			border-bottom: 1px solid #666;
+		}
+
+		#right {
+			position: absolute;
+			top: 140px; /* Set this to the height of the header */
+			bottom: 50px; /* Set this to the height of the footer */
+			right: 0;
+			width: 200px;
+			overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
+			background-color: #bad7df;
+		}
+
+		.innertube {
+			margin: 15px; /* Provides padding for the content */
+		}
+
+		p {
+			color: #555;
+		}
+
+		 ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+
+		#left ul a {
+			font: 120% Arial;
+			padding: 10px;
+			display: block;
+			color: #666;
+			text-decoration: none;
+
+		}
+		#left ul a:hover {
+			background:  #77dd77;
+			color: #080118;
+		}
+
+		#left ul a:active {
+			background:  #77dd77;
+			color: #080118;
+		}
+
+.content {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.content table{
+	width: 100%;
+	padding-left: 100px;
+	padding-right: 100px;
+	text-align: center;
+}
+
+.content td, #content th {
+  border: 1px solid #ddd;
+  padding: 8px;
+
+}
+
+.content tr:nth-child(even){background-color: #f2f2f2;}
+
+
+.content th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.personal_info {
+	border: 3px solid #f1f1f1;
+	padding: 25px 25px 25px 100px;
+	margin: 25px 50px 25px 50px;
+}
+
+button {
+	font: 90% Trebuchet MS;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 15px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+#delete {
+	background-color: #ff6961 ;
+}
+
+#add {
+	background-color: #4CAF50;
+}
+
+#edit {
+	background-color: #779ecb;
+}
+

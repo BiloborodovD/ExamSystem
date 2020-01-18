@@ -1,0 +1,8 @@
+<%--=========================================================================== 
+Footer (bottom area). 
+===========================================================================--%> 
+<footer id="footer">
+			<div class="innertube">
+				<p>Summary Task 4, EPAM JTU, Dmytro Bilobrodov, 2019</p>
+			</div>
+		</footer>

@@ -1,0 +1,159 @@
+/***************************************************************
+CSS for all JSP pages
+***************************************************************/
+#header {
+	position: absolute;
+	background:#fff;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 150px;
+	overflow: hidden; /* Disables scrollbars on the header frame. To enable scrollbars, change "hidden" to "scroll" */
+}
+
+#header h1 {
+	float: center;
+	font: 200% Georgia;
+	color: #333;
+	padding: 10px 20px 5px 10px;
+	margin: 0;
+}
+
+#header #logo{
+padding-left: 30px;
+padding-right:  10px;
+padding-top: 20px;
+padding-bottom: 0;
+height: 70px;
+}
+
+#header #options {
+clear: both;
+background: #4F9EC9;
+height: 30px;
+padding: 10px;
+}
+
+#header #options a:hover {
+background:  #77dd77;
+}
+
+#header #options a.active {
+background:  #77dd77;
+}
+
+#header #options p {
+color: #fff;
+font: 140% Trebuchet MS;
+display: inline;
+padding-left: 30px;
+list-style: none;
+margin: 0 1px 0 0;
+}
+#header #options a {
+color: #fff;
+font: 140% Trebuchet MS;
+text-decoration: none;
+padding-top: 5px;
+padding-right:15px;
+padding-bottom:5px;
+padding-left:15px;
+float: right;
+}
+#footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	overflow: hidden; /* Disables scrollbars on the footer frame. To enable scrollbars, change "hidden" to "scroll" */
+	background: #4F9EC9;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	height: 100%;
+	max-height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
+}
+
+
+main {
+	position: fixed;
+	top: 140px; /* Set this to the height of the header */
+	bottom: 50px; /* Set this to the height of the footer */
+	left: 200px;
+	right: 200px;
+	overflow: auto;
+	background: #DEF3FD;
+}
+
+.innertube {
+	margin: 15px; /* Provides padding for the content */
+}
+
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	padding-left: 300px;
+	padding-right: 300px;
+}
+
+img.avatar {
+	width: 40%;
+	border-radius: 50%;
+}
+
+p {
+	color: #555;
+}
+
+ ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+
+.container {
+	overflow: hidden;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+#login_form input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+#login_form	button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+#login_form button:hover {
+	opacity: 0.8;
+}
+
+.content {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+
+

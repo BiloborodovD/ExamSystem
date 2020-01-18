@@ -1,0 +1,12 @@
+<Context>
+	<Resource name="jdbc/exam_system"
+		auth="Container" 
+		type="javax.sql.DataSource"
+		maxActive="100" maxIdle="30" maxWait="10000"
+		username="Dmytro" password="passwordmysql80" 
+		driverClassName="com.mysql.cj.jdbc.Driver"
+		defaultAutoCommit="false"
+		defaultTransactionIsolation="READ_COMMITTED"
+		connectionProperties="useUnicode=yes;characterEncoding=utf8;"
+		url="jdbc:mysql://localhost:3306/exam_system"/>
+</Context>
