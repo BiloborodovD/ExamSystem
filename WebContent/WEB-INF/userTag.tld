@@ -10,7 +10,7 @@
 <uri>ua.nure.biloborodov.newTags</uri>
 <tag>
     <name>timeMin</name>
-    <tag-class>ua.nure.biloborodov.SummaryTask4.util.TimeMin</tag-class>
+    <tag-class>ua.nure.biloborodov.summarytask4.util.TimeMin</tag-class>
     <body-content>empty</body-content>
     <attribute>
     <name>time</name>
