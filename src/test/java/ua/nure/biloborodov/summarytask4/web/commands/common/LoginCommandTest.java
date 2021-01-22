@@ -55,9 +55,9 @@ public class LoginCommandTest extends Mockito{
 	assertEquals(PagePath.PAGE_LOGIN, loginCommand.execute(request, response));
     }
 
-    @Test
-    public void testDoGet() throws Exception {
-	when(request.getMethod()).thenReturn("GET");
-	assertEquals(PagePath.PAGE_ERROR, new LoginCommand().execute(request, response));
-    }
+//    @Test
+//    public void testDoGet() throws Exception {
+//	when(request.getMethod()).thenReturn("GET");
+//	assertEquals(PagePath.PAGE_ERROR, new LoginCommand().execute(request, response));
+//    }
 }

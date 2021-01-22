@@ -3,7 +3,7 @@
 		auth="Container" 
 		type="javax.sql.DataSource"
 		maxActive="100" maxIdle="30" maxWait="10000"
-		username="Dmytro" password="passwordmysql80" 
+		username="root" password="password"
 		driverClassName="com.mysql.cj.jdbc.Driver"
 		defaultAutoCommit="false"
 		defaultTransactionIsolation="READ_COMMITTED"

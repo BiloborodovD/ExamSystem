@@ -26,6 +26,7 @@ import ua.nure.biloborodov.summarytask4.web.commands.ActionCommand;
 public class FinishTestCommand extends ActionCommand {
 
   @Override
+  @SuppressWarnings({"unchecked"})
   protected String doPost(HttpServletRequest request, HttpServletResponse response)
       throws AppException {
 

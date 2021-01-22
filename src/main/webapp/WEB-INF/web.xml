@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <web-app xmlns="http://java.sun.com/xml/ns/j2ee"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
-http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
-	version="2.4">
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+			http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd
+			http://java.sun.com/xml/ns/j2ee "
+		 version="2.4">
 
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
@@ -19,12 +20,12 @@ http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
 		<servlet-name>Controller</servlet-name>
 		<url-pattern>/controller/*</url-pattern>
 	</servlet-mapping>
-	
+
 	<context-param>
 		<param-name>javax.servlet.jsp.jstl.fmt.locale</param-name>
 		<param-value>en</param-value>
 	</context-param>
-<!--============================================================
+	<!--============================================================
 	Encoding support filter
 =============================================================-->
 	<filter>
@@ -35,28 +36,31 @@ http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
 			<param-value>UTF-8</param-value>
 		</init-param>
 	</filter>
-	
+
 	<filter-mapping>
 		<filter-name>EncodingFilter</filter-name>
 		<servlet-name>Controller</servlet-name>
-	</filter-mapping>	
-<!--============================================================
+	</filter-mapping>
+	<!--============================================================
 Security filter
 =============================================================-->
- 
+
 	<filter>
 		<filter-name>CommandAccessFilter</filter-name>
 		<filter-class>ua.nure.biloborodov.summarytask4.web.filter.CommandAccessFilter</filter-class>
 		<init-param>
 			<param-name>admin</param-name>
 			<param-value>adminProfile getSettings changeSettings usersList deleteSubject addNewSubject
-			getSubjectsEditor blockUser getAdminTests deleteTest submitTestInfo editTestInfo getTestInfoEditor addTestInfo
-			submitQuestion getQuestionCreator editQuestion deleteQuestion addQuestion addAnswer deleteAnswer</param-value>
+				getSubjectsEditor blockUser getAdminTests deleteTest submitTestInfo editTestInfo getTestInfoEditor
+				addTestInfo
+				submitQuestion getQuestionCreator editQuestion deleteQuestion addQuestion addAnswer deleteAnswer
+			</param-value>
 		</init-param>
 		<init-param>
 			<param-name>student</param-name>
 			<param-value>getSettings changeSettings studentProfile getSubjects
-			 getTests startTest runTest finishTest orderTestsBy</param-value>
+				getTests startTest runTest finishTest orderTestsBy
+			</param-value>
 		</init-param>
 		<init-param>
 			<param-name>blocked</param-name>
@@ -71,13 +75,13 @@ Security filter
 			<param-value>login language registerPage register</param-value>
 		</init-param>
 	</filter>
-	
+
 	<filter-mapping>
 		<filter-name>CommandAccessFilter</filter-name>
 		<servlet-name>Controller</servlet-name>
 	</filter-mapping>
-	
-<!--============================================================
+
+	<!--============================================================
 Context listener
 =============================================================-->
 

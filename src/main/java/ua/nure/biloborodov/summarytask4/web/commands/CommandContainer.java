@@ -99,7 +99,7 @@ public class CommandContainer {
 		commands.put("deleteSubject", new DeleteSubjectCommand(subjectService));
 		commands.put("addNewSubject", new AddNewSubjectCommand(subjectService));
 		// test info
-		commands.put("submitTestInfo", new SubmitTestInfoCommand());
+		commands.put("submitTestInfo", new SubmitTestInfoCommand(testService));
 		commands.put("editTestInfo", new EditTestInfoCommand(testService, questionService));
 		commands.put("getTestInfoEditor", new GetTestInfoEditor());
 		commands.put("addTestInfo", new AddTestInfoCommand());
