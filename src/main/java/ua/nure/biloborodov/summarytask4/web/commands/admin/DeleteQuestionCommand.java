@@ -16,7 +16,7 @@ import ua.nure.biloborodov.summarytask4.web.commands.ActionCommand;
 
 public class DeleteQuestionCommand extends ActionCommand {
 
-	private QuestionService service;
+	private final QuestionService service;
 
 	public DeleteQuestionCommand(QuestionService service) {
 		this.service = service;

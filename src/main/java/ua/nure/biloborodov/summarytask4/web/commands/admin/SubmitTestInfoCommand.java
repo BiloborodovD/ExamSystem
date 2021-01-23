@@ -14,7 +14,7 @@ import ua.nure.biloborodov.summarytask4.web.commands.ActionCommand;
 
 public class SubmitTestInfoCommand extends ActionCommand {
 
-	private TestService service;
+	private final TestService service;
 
 	public SubmitTestInfoCommand(TestService service) {
 		this.service = service;

@@ -13,7 +13,7 @@ import ua.nure.biloborodov.summarytask4.web.commands.ActionCommand;
 
 public class DeleteTestCommand extends ActionCommand {
 
-  private TestService service;
+  private final TestService service;
 
   public DeleteTestCommand(TestService service) {
     this.service = service;

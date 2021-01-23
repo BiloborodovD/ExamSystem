@@ -8,7 +8,7 @@ import ua.nure.biloborodov.summarytask4.exception.DBException;
 
 public class UsersTestsService {
 
-  private UsersTestsRepository repository;
+  private final UsersTestsRepository repository;
 
   public UsersTestsService(
       UsersTestsRepository repository) {

@@ -22,9 +22,9 @@ import ua.nure.biloborodov.summarytask4.web.commands.ActionCommand;
 public class StartTestCommand extends ActionCommand {
 
 	public static final String TEST_ID = "test_id";
-  private AnswerRepository answerRepository;
-  private TestRepository testRepository;
-  private QuestionRepository questionRepository;
+  private final AnswerRepository answerRepository;
+  private final TestRepository testRepository;
+  private final QuestionRepository questionRepository;
 
   public StartTestCommand(AnswerRepository answers, TestRepository tests,
 			QuestionRepository questions) {

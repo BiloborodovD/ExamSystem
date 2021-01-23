@@ -18,8 +18,8 @@ import ua.nure.biloborodov.summarytask4.web.commands.ActionCommand;
 
 public class EditTestInfoCommand extends ActionCommand {
 
-	private TestService testService;
-	private QuestionService questionService;
+	private final TestService testService;
+	private final QuestionService questionService;
 
 	public EditTestInfoCommand(TestService testService,	QuestionService questionService) {
 		this.testService = testService;

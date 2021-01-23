@@ -43,22 +43,22 @@ background:  #77dd77;
 }
 
 #header #options p {
-color: #fff;
-font: 140% Trebuchet MS;
-display: inline;
-padding-left: 30px;
-list-style: none;
-margin: 0 1px 0 0;
+    color: #fff;
+    font: 140% Trebuchet MS;
+    display: inline;
+    padding-left: 30px;
+    list-style: none;
+    margin: 0 1px 0 0;
 }
 #header #options a {
-color: #fff;
-font: 140% Trebuchet MS;
-text-decoration: none;
-padding-top: 5px;
-padding-right:15px;
-padding-bottom:5px;
-padding-left:15px;
-float: right;
+    color: #fff;
+    font: 140% Trebuchet MS;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-right:15px;
+    padding-bottom:5px;
+    padding-left:15px;
+    float: right;
 }
 #footer {
 	position: absolute;
@@ -80,7 +80,6 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.5em;
 }
-
 
 main {
 	position: fixed;

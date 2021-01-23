@@ -28,7 +28,7 @@ public class CommandAccessFilter implements Filter {
 	private static final Logger LOG = Logger.getLogger(CommandAccessFilter.class);
 
 	// commands access	
-	private Map<Role, List<String>> accessMap = new HashMap<>();
+	private final Map<Role, List<String>> accessMap = new HashMap<>();
 	private List<String> commons = new ArrayList<>();
 	private List<String> outOfControl = new ArrayList<>();
 	
@@ -78,8 +78,7 @@ public class CommandAccessFilter implements Filter {
 			return false;
 		}
 		
-		return accessMap.get(userRole).contains(commandName)
-				|| commons.contains(commandName);
+		return accessMap.get(userRole).contains(commandName) || commons.contains(commandName);
 	}
 
 	public void init(FilterConfig fConfig) {

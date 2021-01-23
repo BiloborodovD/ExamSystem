@@ -7,7 +7,7 @@ import ua.nure.biloborodov.summarytask4.exception.DBException;
 
 public class TestService {
 
-  private TestRepository repository;
+  private final TestRepository repository;
 
   public TestService(TestRepository repository) {
     this.repository = repository;

@@ -11,7 +11,7 @@ import ua.nure.biloborodov.summarytask4.web.commands.ActionCommand;
 
 public class DeleteSubjectCommand extends ActionCommand {
 
-  private SubjectService service;
+  private final SubjectService service;
 
   public DeleteSubjectCommand(SubjectService service) {
     this.service = service;

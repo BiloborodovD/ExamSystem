@@ -17,15 +17,14 @@ import ua.nure.biloborodov.summarytask4.web.commands.ActionCommand;
 
 public class DeleteAnswerCommand extends ActionCommand {
 
-  private AnswerService service;
+  private final AnswerService service;
 
   public DeleteAnswerCommand(AnswerService service) {
     this.service = service;
   }
 
   @Override
-  protected String doPost(HttpServletRequest request, HttpServletResponse response)
-      throws AppException {
+  protected String doPost(HttpServletRequest request, HttpServletResponse response) throws AppException {
 
     HttpSession session = request.getSession(false);
     Question question = (Question) session.getAttribute(Attributes.CURRENT_QUESTION);

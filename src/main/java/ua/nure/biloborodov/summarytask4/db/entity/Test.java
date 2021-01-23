@@ -7,49 +7,49 @@ import ua.nure.biloborodov.summarytask4.db.DifficultyLevel;
  */
 public class Test extends Entity {
 
-  private String name;
-  private int difficulty;
-  private int time;
-  private int subjectId;
-  private int questionsCount;
+    private String name;
+    private int difficulty;
+    private int time;
+    private int subjectId;
+    private int questionsCount;
 
-  public String getName() {
-    return name;
-  }
+    public String getName() {
+        return name;
+    }
 
-  public void setName(String name) {
-    this.name = name;
-  }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-  public DifficultyLevel getDifficulty() {
-    return DifficultyLevel.define(difficulty);
-  }
+    public DifficultyLevel getDifficulty() {
+        return DifficultyLevel.define(difficulty);
+    }
 
-  public void setDifficulty(DifficultyLevel diff) {
-    this.difficulty = diff.ordinal();
-  }
+    public void setDifficulty(DifficultyLevel diff) {
+        this.difficulty = diff.ordinal();
+    }
 
-  public int getTime() {
-    return time;
-  }
+    public int getTime() {
+        return time;
+    }
 
-  public void setTime(int time) {
-    this.time = time;
-  }
+    public void setTime(int time) {
+        this.time = time;
+    }
 
-  public int getSubjectId() {
-    return subjectId;
-  }
+    public int getSubjectId() {
+        return subjectId;
+    }
 
-  public void setSubjectId(int subjectId) {
-    this.subjectId = subjectId;
-  }
+    public void setSubjectId(int subjectId) {
+        this.subjectId = subjectId;
+    }
 
-  public int getQuestionsCount() {
-    return questionsCount;
-  }
+    public int getQuestionsCount() {
+        return questionsCount;
+    }
 
-  public void setQuestionsCount(int questionsCount) {
-    this.questionsCount = questionsCount;
-  }
+    public void setQuestionsCount(int questionsCount) {
+        this.questionsCount = questionsCount;
+    }
 }

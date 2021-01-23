@@ -54,20 +54,20 @@ import ua.nure.biloborodov.summarytask4.web.commands.student.StartTestCommand;
  */
 public class CommandContainer {
 	
-	private static Map<String, ActionCommand> commands = new TreeMap<>();
-	private static AnswerRepository answerRepository = new AnswerRepository();
-	private static UserRepository userRepository = new UserRepository();
-	private static UsersTestsRepository usersTestsRepository = new UsersTestsRepository();
-	private static TestRepository testRepository = new TestRepository();
-	private static QuestionRepository questionRepository = new QuestionRepository();
-	private static SubjectRepository subjectRepository = new SubjectRepository();
+	private static final Map<String, ActionCommand> commands = new TreeMap<>();
+	private static final AnswerRepository answerRepository = new AnswerRepository();
+	private static final UserRepository userRepository = new UserRepository();
+	private static final UsersTestsRepository usersTestsRepository = new UsersTestsRepository();
+	private static final TestRepository testRepository = new TestRepository();
+	private static final QuestionRepository questionRepository = new QuestionRepository();
+	private static final SubjectRepository subjectRepository = new SubjectRepository();
 
-	private static SubjectService subjectService = new SubjectService(subjectRepository);
-	private static UsersTestsService usersTestsService = new UsersTestsService(usersTestsRepository);
-	private static UserService userService = new UserService(userRepository);
-	private static TestService testService = new TestService(testRepository);
-	private static AnswerService answerService = new AnswerService(answerRepository);
-	private static QuestionService questionService = new QuestionService(questionRepository);
+	private static final SubjectService subjectService = new SubjectService(subjectRepository);
+	private static final UsersTestsService usersTestsService = new UsersTestsService(usersTestsRepository);
+	private static final UserService userService = new UserService(userRepository);
+	private static final TestService testService = new TestService(testRepository);
+	private static final AnswerService answerService = new AnswerService(answerRepository);
+	private static final QuestionService questionService = new QuestionService(questionRepository);
 
 	
 	static {

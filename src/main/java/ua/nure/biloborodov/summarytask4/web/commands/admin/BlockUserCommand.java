@@ -1,22 +1,21 @@
 package ua.nure.biloborodov.summarytask4.web.commands.admin;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import ua.nure.biloborodov.summarytask4.constants.Attributes;
 import ua.nure.biloborodov.summarytask4.constants.CommandPath;
 import ua.nure.biloborodov.summarytask4.constants.PagePath;
 import ua.nure.biloborodov.summarytask4.db.Role;
 import ua.nure.biloborodov.summarytask4.db.entity.User;
-import ua.nure.biloborodov.summarytask4.db.repository.UserRepository;
 import ua.nure.biloborodov.summarytask4.exception.AppException;
 import ua.nure.biloborodov.summarytask4.service.UserService;
 import ua.nure.biloborodov.summarytask4.web.commands.ActionCommand;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.List;
+
 public class BlockUserCommand extends ActionCommand {
 
-	private UserService service;
+	private final UserService service;
 
 	public BlockUserCommand(UserService service) {
 		this.service = service;
@@ -43,8 +42,7 @@ public class BlockUserCommand extends ActionCommand {
   }
 
   @Override
-  protected String doGet(HttpServletRequest request, HttpServletResponse response)
-      throws AppException {
+  protected String doGet(HttpServletRequest request, HttpServletResponse response) throws AppException {
     return PagePath.PAGE_ADMIN_USERS_LIST;
   }
 

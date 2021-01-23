@@ -8,7 +8,7 @@ import ua.nure.biloborodov.summarytask4.exception.DBException;
 
 public class UserService {
 
-  private UserRepository repository;
+  private final UserRepository repository;
 
   public UserService(UserRepository repository) {
     this.repository = repository;
